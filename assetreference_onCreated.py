@@ -64,6 +64,6 @@ try:
     threading.Thread(target=delayedSet).start()
 
 except Exception as err:
-    # just in case a ROP Alembic Output SOP is created as a locked node by something else. don't need to see errors.
+    # just in case, show what went wrong
     print("ERR: " + err)
     pass
